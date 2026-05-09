@@ -36,11 +36,21 @@ What this tests:
 
 
 def print_by_rows(matrix):
-    pass
+    for row in matrix:
+        print(row)
 
 
 def print_by_columns(matrix):
-    pass
+    #[0][0] then [1][0]
+    #[0][1] then [1][1]
+    #[0][2] then [1][2]
+    col = len(matrix[0])
+
+    for i in range(0, col):
+        for j in range(len(matrix)):
+            print(matrix[j][i])
+
+        
 
 
 if __name__ == "__main__":
